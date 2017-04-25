@@ -42,10 +42,11 @@ grammar JavaForth;
 
 // starting point for parsing a java file
 compilationUnit
-    :   lang* EOF
+    :   lang*
     ;
 lang
-    :   expression
+    :   statement
+    |   expressionList
     |   variableDeclarators
     |   print
     ;
@@ -118,10 +119,6 @@ expressionList
     ;
 
 statementExpression
-    :   expression
-    ;
-
-constantExpression
     :   expression
     ;
 
