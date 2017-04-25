@@ -48,6 +48,7 @@ lang
     :   statement
     |   expressionList
     |   variableDeclarators
+    |   literal
     |   print
     ;
 print
@@ -55,7 +56,7 @@ print
     ;
 
 variableDeclarators
-    :   variableDeclarator (',' variableDeclarator)*
+    :   primitiveType variableDeclarator (',' variableDeclarator)*
     ;
 
 variableDeclarator
@@ -63,15 +64,11 @@ variableDeclarator
     ;
 
 variableDeclaratorId
-    :   Identifier ('[' ']')*
+    :   Identifier
     ;
 
 variableInitializer
     :   expression
-    ;
-
-typeType
-    :   primitiveType ('[' ']')*
     ;
 
 primitiveType
@@ -127,7 +124,6 @@ expression
     |   expression '.' Identifier
     |   expression '[' expression ']'
     |   expression '(' expressionList? ')'
-    |   '(' typeType ')' expression
     |   expression ('++' | '--')
     |   ('+'|'-'|'++'|'--') expression
     |   ('~'|'!') expression
@@ -135,7 +131,6 @@ expression
     |   expression ('+'|'-') expression
     |   expression ('<' '<' | '>' '>' '>' | '>' '>') expression
     |   expression ('<=' | '>=' | '>' | '<') expression
-    |   expression 'instanceof' typeType
     |   expression ('==' | '!=') expression
     |   expression '&' expression
     |   expression '^' expression
