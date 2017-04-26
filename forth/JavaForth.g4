@@ -42,7 +42,7 @@ grammar JavaForth;
 
 // starting point for parsing a java file
 compilationUnit
-    :   lang*
+    :   lang* EOF
     ;
 lang
     :   statement

@@ -77,16 +77,6 @@ public interface JavaForthListener extends ParseTreeListener {
 	 */
 	void exitVariableInitializer(JavaForthParser.VariableInitializerContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link JavaForthParser#typeType}.
-	 * @param ctx the parse tree
-	 */
-	void enterTypeType(JavaForthParser.TypeTypeContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link JavaForthParser#typeType}.
-	 * @param ctx the parse tree
-	 */
-	void exitTypeType(JavaForthParser.TypeTypeContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link JavaForthParser#primitiveType}.
 	 * @param ctx the parse tree
 	 */
@@ -186,16 +176,6 @@ public interface JavaForthListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitStatementExpression(JavaForthParser.StatementExpressionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link JavaForthParser#constantExpression}.
-	 * @param ctx the parse tree
-	 */
-	void enterConstantExpression(JavaForthParser.ConstantExpressionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link JavaForthParser#constantExpression}.
-	 * @param ctx the parse tree
-	 */
-	void exitConstantExpression(JavaForthParser.ConstantExpressionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link JavaForthParser#expression}.
 	 * @param ctx the parse tree

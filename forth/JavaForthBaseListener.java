@@ -99,18 +99,6 @@ public class JavaForthBaseListener implements JavaForthListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTypeType(JavaForthParser.TypeTypeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitTypeType(JavaForthParser.TypeTypeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterPrimitiveType(JavaForthParser.PrimitiveTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -226,18 +214,6 @@ public class JavaForthBaseListener implements JavaForthListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitStatementExpression(JavaForthParser.StatementExpressionContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterConstantExpression(JavaForthParser.ConstantExpressionContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitConstantExpression(JavaForthParser.ConstantExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
